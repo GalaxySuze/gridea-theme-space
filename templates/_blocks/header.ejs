@@ -1,0 +1,70 @@
+
+<div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
+    </a>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="<%= themeConfig.domain %>/media/images/avatar.png" alt="<%= themeConfig.siteName %>" class="img-responsive">
+        </figure>
+        <h3 class="heading">ABOUT ME</h3>
+        <h2><%= themeConfig.siteName %></h2>
+        <p><%= themeConfig.siteDescription %></p>
+        <ul class="fh5co-social">
+            <% menus.forEach(function (menu) { %>
+                <li>
+                    <a href="<%= menu.link %>"
+                    <% if (menu.openType === 'External') { %>
+                       target="_blank"
+                            <% } %> >
+                        <%= menu.name %>
+                    </a>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+
+    <div class="fh5co-menu">
+        <div class="fh5co-box">
+            <h3 class="heading">搜索</h3>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="输入关键字">
+                </div>
+            </form>
+        </div>
+        <div class="fh5co-box">
+            <h3 class="heading">标签</h3>
+            <ul>
+                <% site.tags.forEach(function(tag) { %>
+                    <li><a href="<%= tag.link %>"><%= tag.name %></a></li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                <% menus.forEach(function (menu) { %>
+                    <li>
+                        <a href="<%= menu.link %>"
+                        <% if (menu.openType === 'External') { %>
+                           target="_blank"
+                                <% } %> >
+                            <%= menu.name %>
+                        </a>
+                    </li>
+                <% }); %>
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a href="<%= themeConfig.domain %>"><%= themeConfig.siteName %></a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>

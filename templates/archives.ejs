@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./_blocks/head', { siteTitle: `文章归档 | ${themeConfig.siteName}` }) %>
+</head>
+<body>
+<%- include('./_blocks/header') %>
+
+<div class="container-fluid">
+    <div class="row fh5co-post-entry single-entry">
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-12 col-xs-offset-0 text-center content-article">
+
+                <div class="row">
+
+                    <% let years = []; posts.forEach((item) => { const year = item.date.substring(0, 4); if (!years.includes(year)) { years.push(year); } }); %>
+                    <h2 class="text-center archives-title">
+                        <i class="fa fa-archive"></i> 文章归档
+                    </h2>
+
+                    <% years.forEach(function(year) { %>
+                    <div class="row post-group">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-center post-year tag-title">
+                            <h3><%- year %></h3>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-left">
+                            <ul class="post-list">
+                            <% posts.forEach(function(post) { %>
+                                <%if (post.date.indexOf(year) !== -1) { %>
+                                <li class="post-item">
+                                    <a href="<%= post.link %>" target="_blank">
+                                        <span class="post-title"><%= post.title %></span>
+                                        <span class="post-day"><%= post.dateFormat %></span>
+                                    </a>
+                                </li>
+                                <% } %>
+                            <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+                    <% }); %>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('./_blocks/footer') %>
+
+<%- include('./_blocks/scripts') %>
+</body>
+</html>

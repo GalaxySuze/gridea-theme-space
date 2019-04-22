@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./_blocks/head') %>
+  </head>
+  <body>
+    <%- include('./_blocks/header') %>
+
+    <div class="container-fluid">
+      <div class="row fh5co-post-entry">
+
+        <% posts.forEach(function(post) { %>
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box article-box">
+            <figure class="img-box">
+              <a href="<%= post.link %>">
+                <% if (themeConfig.showFeatureImage && post.feature) { %>
+                  <img src="<%= post.feature %>" alt="<%= post.title %>" class="img-responsive">
+                <% } %>
+              </a>
+            </figure>
+            <span class="fh5co-meta">
+              <% if (post.tags.length > 0) { %>
+                    <% post.tags.forEach(function(tag) { %>
+                        <a href="<%= tag.link %>" class="tag"><%= tag.name %>, </a>
+                    <% }); %>
+              <% } %>
+            </span>
+            <h3 class="fh5co-article-title">
+              <a href="<%= post.link %>"><%= post.title %></a>
+            </h3>
+            <span class="fh5co-meta fh5co-date"><%= post.dateFormat %></span>
+          </article>
+        <% }); %>
+            <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
+
+      </div>
+
+      <div class="pagination-box animate-box">
+        <% if (pagination.prev) { %>
+          <a href="<%= pagination.prev %>" class="prev">
+            <i class="fa fa-chevron-left"></i> 上一页
+          </a>
+        <% } %>
+        <% if (pagination.next) { %>
+          <a href="<%= pagination.next %>" class="next">下一页
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        <% } %>
+      </div>
+    </div>
+
+    <%- include('./_blocks/footer') %>
+
+    <%- include('./_blocks/scripts') %>
+  </body>
+</html>

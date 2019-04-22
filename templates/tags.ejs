@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('./_blocks/head', { siteTitle: `标签列表 | ${themeConfig.siteName}` }) %>
+    </head>
+    <body>
+    <%- include('./_blocks/header') %>
+
+    <div class="container-fluid" style="height: 620px;">
+        <div class="row fh5co-post-entry">
+
+            <% site.tags.forEach(function(tag) { %>
+                <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                    <h2 class="fh5co-article-title">
+                        <i class="fa fa-tag" style="opacity: .6; font-size: 19px;"></i>
+                        <a href="<%= tag.link %>"><%= tag.name %></a>
+                    </h2>
+                </article>
+            <% }); %>
+            <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
+
+        </div>
+
+        <%- include('./_blocks/footer') %>
+    </div>
+
+    <%- include('./_blocks/scripts') %>
+    </body>
+</html>
