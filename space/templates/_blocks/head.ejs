@@ -19,6 +19,17 @@
 <scripts src="<%= themeConfig.domain %>/media/scripts/_vendors/respond.min.js"></scripts>
 <![endif]-->
 
+<!-- Comment -->
+<% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
+    <% if (commentSetting.commentPlatform === 'gitalk') { %>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+    <% } %>
+
+    <% if (commentSetting.commentPlatform === 'disqus') { %>
+        <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+    <% } %>
+<% } %>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/tomorrow-night.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
 <link crossorigin="anonymous" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" href="https://lib.baomitu.com/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">

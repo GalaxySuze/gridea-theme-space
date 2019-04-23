@@ -11,14 +11,13 @@
         <h2><%= themeConfig.siteName %></h2>
         <p><%= themeConfig.siteDescription %></p>
         <ul class="fh5co-social">
-            <% menus.forEach(function (menu) { %>
+            <% ['github', 'twitter', 'weibo', 'zhihu', 'facebook'].forEach((item) => { %>
                 <li>
-                    <a href="<%= menu.link %>"
-                    <% if (menu.openType === 'External') { %>
-                       target="_blank"
-                            <% } %> >
-                        <%= menu.name %>
-                    </a>
+                    <% if (site.customConfig[item]) { %>
+                        <a href="<%= site.customConfig[item] %>" target="_blank">
+                            <i class="fab fa-<%= item %>"></i>
+                        </a>
+                    <% } %>
                 </li>
             <% }); %>
         </ul>
