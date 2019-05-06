@@ -23,4 +23,4 @@
 
 [示例网站](https://zhangajian.com)
 
-<img src="https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_01.png" alt="首页" style="display:block;max-width:100%;">
+<img src="https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_01-min.png" alt="首页" style="display:block;max-width:100%;">
