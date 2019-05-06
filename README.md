@@ -20,8 +20,7 @@
 - 页面搜索功能完善
 
 ### 示例
+
+[示例网站](https://zhangajian.com)
+
 <img src="https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_01.png" alt="首页" style="display:block;max-width:100%;">
-
-<img src="https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_03.png" alt="归档" style="display:block;max-width:100%;">
-
-<img src="https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_02.png" alt="详情" style="display:block;max-width:100%;">
