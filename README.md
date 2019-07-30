@@ -1,6 +1,6 @@
 # Gridea Theme 「 Space 」
 
-> 基于静态博客生成器[Gridea](https://gridea.dev/)的博客网站主题Space
+> 基于静态博客生成器[Gridea](https://gridea.dev/)的卡片式、简洁风博客网站主题「Space」
 
 ### 安装方法
 - 克隆项目到本地
@@ -16,3 +16,9 @@
 - ~~主题自定义配置功能~~
 - ~~主页文章列表如果不设置封面，排版优化~~
 - 页面搜索功能完善
+
+### 示例
+
+[示例网站](https://zhangajian.com)
+
+<img src="https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_01-min.png" alt="首页" style="display:block;max-width:100%;">
