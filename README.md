@@ -19,8 +19,10 @@
 - 文章页面优化
 - 归档页面优化
 - 响应式显示优化
+
 <br>
-使用友链和图廊页面的方法 [点击这里](https://zhangajian.com/post/geng-xin-liao-yi-bo-space-zhu-ti/)
+
+使用友链和图廊页面的方法[点击这里](https://zhangajian.com/post/geng-xin-liao-yi-bo-space-zhu-ti/)
 
 #### 图廊页面截图：
 阴影卡片布局
