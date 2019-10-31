@@ -23,18 +23,18 @@
 
 #### 图廊页面截图：
 阴影卡片布局
-![阴影卡片布局](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/space-tulang-demo.jpg)
+![阴影卡片布局](https://github.com/GalaxySuze/gridea-theme-space/raw/master/space-tulang-demo.jpg)
+<br>
 平面卡片布局
-![平面卡片布局](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/space-tulang-demo-2.png)
+![平面卡片布局](https://github.com/GalaxySuze/gridea-theme-space/raw/master/space-tulang-demo-2.png)
 
 #### 友链页面截图：
-![友链页面](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/space-youlian-demo.jpg)
+![友链页面](https://github.com/GalaxySuze/gridea-theme-space/raw/master/space-youlian-demo.jpg)
 
 ### 示例
 
 [示例网站](https://zhangajian.com)
-
-<img src="https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_01-min.png" alt="首页" style="display:block;max-width:100%;">
+![示例网站](https://github.com/GalaxySuze/gridea-theme-space/raw/master/demo.png)
 
 ### 待更新项
 - 文章显示目录
