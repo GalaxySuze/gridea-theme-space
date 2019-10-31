@@ -26,7 +26,7 @@
 
 #### 图廊页面截图：
 阴影卡片布局
-![阴影卡片布局](https://i.loli.net/2019/10/31/3YcgodauDj2I8ri.jpg)
+![阴影卡片布局](https://i.loli.net/2019/10/31/gZyMX1bvJUrRCYL.jpg)
 <br>
 平面卡片布局
 ![平面卡片布局](https://i.loli.net/2019/10/31/vjVzDqfbTYgFyLK.jpg)
