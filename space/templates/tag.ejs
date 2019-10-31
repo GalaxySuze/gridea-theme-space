@@ -19,7 +19,7 @@
         <figure class="img-box">
           <a href="<%= post.link %>">
             <% if (themeConfig.showFeatureImage && post.feature) { %>
-              <img src="<%= post.feature %>" alt="<%= post.title %>" class="img-responsive">
+              <img data-original="<%= post.feature %>" alt="<%= post.title %>" class="img-responsive img-rounded lazy">
             <% } %>
           </a>
         </figure>

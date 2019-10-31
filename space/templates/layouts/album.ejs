@@ -1,0 +1,61 @@
+<%
+// 获取文章中的所有img信息
+var content = post.content;
+// 正则分析
+var imgReg = /<img.*?(?:>|\/>)/gi;  // 所有img标签
+var srcReg = /src="(\S*)"/;   // src
+var altReg = /alt="(\S*)"/;   // alt
+var album = content.match(imgReg);
+albumList = [];
+// 设置array
+for (var i = 0; i < album.length; i++) {
+    var info = {
+        'src': album[i].match(srcReg)[1],
+        'alt': album[i].match(altReg)[1]
+    };
+    albumList[i] = info;
+}
+%>
+
+<div class="container">
+    <div class="row fh5co-post-entry single-entry">
+        <!-- 图册描述 -->
+        <div class="container" style="padding-bottom: 3em;">
+            <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xxs-12 animate-box">
+                <h5 class="fh5co-article-title"><%- post.abstract %></h5>
+            </article>
+        </div>
+
+        <% if (site.customConfig.albumStyle == 1) { %>
+
+            <!-- 阴影卡片布局 -->
+            <div class="gallery">
+                <% albumList.forEach(function(img) { %>
+                    <div class="gallery-item animate-box" data-toggle="tooltip" data-placement="top" title="<%= img.alt %>">
+                        <img class="gallery-image lazy" data-original="<%= img.src %>" alt="<%= img.alt %>"/>
+                    </div>
+                <% }); %>
+            </div>
+        <% } else if(site.customConfig.albumStyle == 2) { %>
+
+            <!-- 平面卡片布局 -->
+            <% albumList.forEach(function(img) { %>
+                <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                    <figure class="img-box" data-toggle="tooltip" data-placement="top" title="<%= img.alt %>">
+                        <img data-original="<%= img.src %>" alt="<%= img.alt %>" class="img-responsive lazy">
+                    </figure>
+                </article>
+            <% }); %>
+        <% } %>
+
+        <!-- 分隔线 -->
+        <div class="container-fluid" style="padding-top: 3em;">
+            <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xxs-12 animate-box">
+                <hr class="album-hr">
+            </article>
+        </div>
+    </div>
+
+    <%- include('../_blocks/comment') %>
+
+</div>

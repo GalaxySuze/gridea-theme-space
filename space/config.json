@@ -1,16 +1,34 @@
 {
   "name": "Space",
-  "version": "1.0.0",
-  "author": "ZhangAJian",
+  "version": "1.1.0",
+  "author": "Vick Zhang",
   "customConfig": [
     {
       "name": "bgColor",
       "label": "网页背景色",
-      "group": "颜色",
+      "group": "布局",
       "value": "#ffffff",
       "type": "input",
       "card": "color",
       "note": "颜色字符串:（如：#EEEEEE、rgba(255, 255, 255, 0.9)）"
+    },
+    {
+      "name": "albumStyle",
+      "label": "图廊样式",
+      "group": "布局",
+      "value": "1",
+      "type": "select",
+      "note": "",
+      "options": [
+        {
+          "label": "阴影卡片",
+          "value": "1"
+        },
+        {
+          "label": "平面卡片",
+          "value": "2"
+        }
+      ]
     },
     {
       "name": "github",
@@ -45,14 +63,6 @@
       "note": "链接地址"
     },
     {
-      "name": "facebook",
-      "label": "Facebook",
-      "group": "社交",
-      "value": "",
-      "type": "input",
-      "note": "链接地址"
-    },
-    {
       "name": "customCss",
       "label": "自定义CSS",
       "group": "自定义样式",
@@ -61,12 +71,12 @@
       "note": ""
     },
     {
-      "name": "ga",
-      "label": "跟踪 ID",
-      "group": "谷歌统计",
+      "name": "baiduStats",
+      "label": "百度统计代码",
+      "group": "网站统计",
       "value": "",
-      "type": "input",
-      "note": "UA-xxxxxxxxx-x"
+      "type": "textarea",
+      "note": ""
     }
   ]
 }

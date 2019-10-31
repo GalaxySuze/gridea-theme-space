@@ -7,7 +7,7 @@
         <figure>
             <img src="<%= themeConfig.domain %>/media/images/avatar.png" alt="<%= themeConfig.siteName %>" class="img-responsive">
         </figure>
-        <h3 class="heading">ABOUT ME</h3>
+        <a href="<%= themeConfig.domain %>/post/about/"><h3 class="heading">ABOUT ME</h3></a>
         <h2><%= themeConfig.siteName %></h2>
         <p><%= themeConfig.siteDescription %></p>
         <ul class="fh5co-social">
@@ -25,16 +25,7 @@
 
     <div class="fh5co-menu">
         <div class="fh5co-box">
-            <h3 class="heading">搜索</h3>
-            <form action="#">
-                <div class="form-group">
-                    <input type="text" id="bdcsMain" class="form-control" placeholder="输入关键字">
-<!--                    <button type="submit" class="btn btn-sm btn-warning" style="margin-top: 6px; width: 100%">点击搜索</button>-->
-                </div>
-            </form>
-        </div>
-        <div class="fh5co-box">
-            <h3 class="heading">标签</h3>
+            <a href="<%= themeConfig.domain %>/tags/"><h3 class="heading">👉标签</h3></a>
             <ul>
                 <% site.tags.forEach(function(tag) { %>
                     <li><a href="<%= tag.link %>"><%= tag.name %></a></li>

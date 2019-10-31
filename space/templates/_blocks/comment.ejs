@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12 animate-box">
+        <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
+            <% if (commentSetting.commentPlatform === 'gitalk') { %>
+                <div id="gitalk-container"></div>
+            <% } %>
+
+            <% if (commentSetting.commentPlatform === 'disqus') { %>
+                <div id="disqus_thread"></div>
+            <% } %>
+        <% } %>
+    </div>
+</div>

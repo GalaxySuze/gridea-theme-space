@@ -1,5 +1,7 @@
 <!-- jQuery -->
 <script src="<%= themeConfig.domain %>/media/scripts/_vendors/jquery.min.js"></script>
+<!-- img lazy load -->
+<script src="<%= themeConfig.domain %>/media/scripts/_vendors/jquery.lazyload.min.js"></script>
 <!-- jQuery Easing -->
 <script src="<%= themeConfig.domain %>/media/scripts/_vendors/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
@@ -12,7 +14,17 @@
 <script src="<%= themeConfig.domain %>/media/scripts/_vendors/md5.min.js"></script>
 
 <script type="application/javascript">
+    // 代码高亮
     hljs.initHighlightingOnLoad();
+    // img 懒加载
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn",  // 懒加载动画
+            threshold: 180  // 在图片距离屏幕180px时提前载入
+        });
+        // tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 </script>
 
 <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>

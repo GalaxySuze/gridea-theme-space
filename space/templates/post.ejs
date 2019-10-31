@@ -1,77 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <%- include('./_blocks/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %>
-  </head>
-  <body>
-  <%- include('./_blocks/header') %>
+<head>
+    <%- include('./_blocks/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %>
+</head>
+<body>
+    <%- include('./_blocks/header') %>
 
-<!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
-<!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
+    <!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
+    <!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
 
-  <div class="container-fluid">
-      <div class="row fh5co-post-entry single-entry">
-          <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
-              <figure class="animate-box">
-                  <% if (post.feature) { %>
-                      <img src="<%= post.feature %>" alt="<%= post.title %>" class="img-responsive">
-                  <% } %>
-              </figure>
-              <span class="fh5co-meta animate-box">
-                  <% if (post.tags.length > 0) { %>
-                      <div class="tag-container">
-                          <% post.tags.forEach(function(tag) { %>
-                              <a href="<%= tag.link %>" class="tag"><%= tag.name %>, </a>
-                          <% }); %>
-                      </div>
-                  <% } %>
-              </span>
-              <h2 class="fh5co-article-title animate-box"><%= post.title %></h2>
-              <span class="fh5co-meta fh5co-date animate-box"><%= post.dateFormat %></span>
-
-              <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
-                  <div class="row">
-                      <div class="col-md-12 animate-box post-content">
-                          <p> <%- post.content %> </p>
-                      </div>
-                  </div>
-
-                  <div class="row">
-                      <div class="col-md-12 animate-box">
-                          <% if (post.nextPost && !post.hideInList) { %>
-                              <div class="next-post">
-                                  <div class="next">下一篇</div>
-                                  <a href="<%= post.nextPost.link %>">
-                                      <h3 class="post-title">
-                                          <%= post.nextPost.title %>
-                                      </h3>
-                                  </a>
-                              </div>
-                          <% } %>
-                      </div>
-                  </div>
-
-                  <div class="row">
-                      <div class="col-md-12 animate-box">
-                          <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
-                              <% if (commentSetting.commentPlatform === 'gitalk') { %>
-                                  <div id="gitalk-container"></div>
-                              <% } %>
-
-                              <% if (commentSetting.commentPlatform === 'disqus') { %>
-                                  <div id="disqus_thread"></div>
-                              <% } %>
-                          <% } %>
-                      </div>
-                  </div>
-              </div>
-
-          </article>
-      </div>
-  </div>
+    <!-- 等gridea出自定义页面功能再优化一下 -->
+    <% if (post.title.toLowerCase == 'links' || post.title == '友链') { %>
+        <%- include('./layouts/links') %>
+    <% } else if(post.title.toLowerCase == 'album' || post.title == '图廊') { %>
+        <%- include('./layouts/album') %>
+    <% } else { %>
+        <%- include('./layouts/post-detail') %>
+    <% } %>
 
     <%- include('./_blocks/footer') %>
 
     <%- include('./_blocks/scripts') %>
-  </body>
+</body>
 </html>

@@ -1,5 +1,5 @@
 const generateOverride = (params = {}) => {
-    let result = ''
+    let result = '';
 
     // 内容区背景色 - contentBgColor
     if (params.bgColor && params.bgColor !== '#ffffff') {
@@ -18,6 +18,6 @@ const generateOverride = (params = {}) => {
     }
 
     return result
-}
+};
 
-module.exports = generateOverride
+module.exports = generateOverride;

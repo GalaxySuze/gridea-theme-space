@@ -1,0 +1,43 @@
+<%
+// 获取文章中的所有href信息
+var linksCont = post.content;
+// 正则分析
+var aElReg = /<a.*?(?:>|\/>)/gi;   // 正文所有a标签
+var hrefReg = /href=[\'\"]?([^\'\"]*)[\'\"]?/gi; // a标签href
+var nameReg = /name="(\S*)"/;  // a标签name
+var logoReg = /logo="(\S*)"/;  // a标签logo
+var links = linksCont.match(aElReg);
+linksList = [];
+// 设置array
+for (var i = 0; i < links.length; i++) {
+    var el = {
+        'href': links[i].match(hrefReg),
+        'name': links[i].match(nameReg)[1],
+        'logo': links[i].match(logoReg)[1]
+    };
+    linksList[i] = el;
+}
+%>
+
+<!-- 链接列表 -->
+<div class="container">
+    <div class="row fh5co-post-entry">
+        <% linksList.forEach(function(link) { %>
+            <article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-xxs-12 animate-box">
+                <% if (link.logo) { %>
+                    <figure class="img-box">
+                        <a <%- link.href %> target="_blank">
+                            <img data-original="<%= link.logo %>" alt="<%= link.name %>" class="img-responsive img-rounded lazy">
+                        </a>
+                    </figure>
+                <% } %>
+                <h3 class="links-title">
+                    <a <%- link.href %> target="_blank">
+                        <%= link.name %>
+                    </a>
+                </h3>
+            </article>
+        <% }); %>
+        <div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
+    </div>
+</div>
