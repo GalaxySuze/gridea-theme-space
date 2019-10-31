@@ -25,10 +25,14 @@
 使用友链和图廊页面的方法[点击这里](https://zhangajian.com/post/geng-xin-liao-yi-bo-space-zhu-ti/)
 
 #### 图廊页面截图：
-阴影卡片布局
+- 阴影卡片布局
+
 ![阴影卡片布局](https://i.loli.net/2019/10/31/gZyMX1bvJUrRCYL.jpg)
+
 <br>
-平面卡片布局
+
+- 平面卡片布局
+
 ![平面卡片布局](https://i.loli.net/2019/10/31/vjVzDqfbTYgFyLK.jpg)
 
 #### 友链页面截图：
