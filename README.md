@@ -9,8 +9,9 @@
 - 在主题中选择「 space 」主题，点击保存
 - 预览查看效果
 
-<h3 style="color: #98A9F9">🎉 版本更新了~</h3>
+### 🎉 版本更新了~
 更新内容：
+
 - 新增友链页面
 - 新增图廊页面（分两种布局）
 - 优化图片懒加载
@@ -18,23 +19,23 @@
 - 文章页面优化
 - 归档页面优化
 - 响应式显示优化
-
+<br>
 使用友链和图廊页面的方法 👉[点击这里](https://zhangajian.com/post/geng-xin-liao-yi-bo-space-zhu-ti/)
 
 #### 图廊页面截图：
 阴影卡片布局
-![阴影卡片布局](https://github.com/GalaxySuze/gridea-theme-space/raw/master/space-tulang-demo.jpg)
+![阴影卡片布局](https://i.loli.net/2019/10/31/3YcgodauDj2I8ri.jpg)
 <br>
 平面卡片布局
-![平面卡片布局](https://github.com/GalaxySuze/gridea-theme-space/raw/master/space-tulang-demo-2.png)
+![平面卡片布局](https://i.loli.net/2019/10/31/vjVzDqfbTYgFyLK.jpg)
 
 #### 友链页面截图：
-![友链页面](https://github.com/GalaxySuze/gridea-theme-space/raw/master/space-youlian-demo.jpg)
+![友链页面截图](https://i.loli.net/2019/10/31/pXqNQwY6DIdOG7u.jpg)
 
 ### 示例
 
 [示例网站](https://zhangajian.com)
-![示例网站](https://github.com/GalaxySuze/gridea-theme-space/raw/master/demo.png)
+![示例网站](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_01-min.png)
 
 ### 待更新项
 - 文章显示目录
