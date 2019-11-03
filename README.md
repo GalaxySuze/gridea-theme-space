@@ -9,11 +9,12 @@
 - 在主题中选择「 space 」主题，点击保存
 - 预览查看效果
 
-### 🎉 版本更新了~
+### 🎉 (2019-10-30)版本更新了~
 更新内容：
 
 - 新增友链页面
 - 新增图廊页面（分两种布局）
+- 显示文章目录
 - 优化图片懒加载
 - 首页显示优化
 - 文章页面优化
@@ -42,9 +43,4 @@
 
 [示例网站](https://zhangajian.com)
 ![示例网站](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_01-min.png)
-
-### 待更新项
-- 文章显示目录
-- 支持数据公式
-
 
