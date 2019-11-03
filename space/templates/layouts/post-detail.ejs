@@ -16,7 +16,11 @@
                 <% } %>
             </span>
             <h2 class="fh5co-article-title animate-box"><%= post.title %></h2>
-            <span class="fh5co-meta fh5co-date animate-box"><%= post.dateFormat %></span>
+            <ol class="breadcrumb fh5co-meta fh5co-date animate-box" style="margin-bottom:0; background-color:#f8f9fa">
+                <li><%= post.dateFormat %></li>
+                <li><%= post.stats.words %>字</li>
+                <li><%= post.stats.text %></li>
+            </ol>
 
             <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
                 <div class="row">

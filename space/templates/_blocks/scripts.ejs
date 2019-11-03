@@ -12,10 +12,16 @@
 <script src="<%= themeConfig.domain %>/media/scripts/_vendors/main.js"></script>
 <!-- Md5 Min JS -->
 <script src="<%= themeConfig.domain %>/media/scripts/_vendors/md5.min.js"></script>
+<!-- katex -->
+<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
+<!-- highlight -->
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+
 
 <script type="application/javascript">
     // 代码高亮
     hljs.initHighlightingOnLoad();
+
     // img 懒加载
     $(function () {
         $("img.lazy").lazyload({
@@ -24,6 +30,11 @@
         });
         // tooltip
         $('[data-toggle="tooltip"]').tooltip();
+
+        // 目录
+        $('#tool-toc').click(function () {
+            $('.post-toc').toggle();
+        });
     });
 </script>
 
