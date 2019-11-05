@@ -36,6 +36,16 @@
             $('.post-toc').toggle();
         });
     });
+
+    <% if (site.customConfig.imgDisabled == 1) { %>
+        var allImg = $("img");
+        allImg.on("contextmenu", function () {
+            return false;
+        });
+        allImg.on("dragstart", function () {
+            return false;
+        });
+    <% } %>
 </script>
 
 <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
