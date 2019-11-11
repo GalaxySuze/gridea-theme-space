@@ -9,6 +9,9 @@
 - 在主题中选择「 space 」主题，点击保存
 - 预览查看效果
 
+### ✨新主题
+（生命在于折腾）开发了一款新主题[Subtle Galaxy](https://github.com/GalaxySuze/gridea-theme-subtle-galaxy)欢迎使用
+
 ### 🎉 (2019-10-30)版本更新了~
 更新内容：
 
