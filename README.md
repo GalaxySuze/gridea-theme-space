@@ -10,7 +10,7 @@
 - 预览查看效果
 
 ### ✨ 新主题 Subtle Galaxy
-现主题的博客地址已经变为新主题 [Subtle Galaxy](https://github.com/GalaxySuze/gridea-theme-subtle-galaxy) 的样式（呃，生命在于折腾，博客文章万年没更新T_T）欢迎使用，
+[Subtle Galaxy](https://github.com/GalaxySuze/gridea-theme-subtle-galaxy)（呃，生命在于折腾，博客文章万年没更新T_T）欢迎使用
 
 ### 🎉 (2019-10-30)版本更新了~
 更新内容：
