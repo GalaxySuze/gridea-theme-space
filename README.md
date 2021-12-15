@@ -9,10 +9,10 @@
 - 在主题中选择「 space 」主题，点击保存
 - 预览查看效果
 
-### ✨ 新主题 Subtle Galaxy
-[Subtle Galaxy](https://github.com/GalaxySuze/gridea-theme-subtle-galaxy)（呃，生命在于折腾，博客文章万年没更新T_T）欢迎使用
+### ✨ 另一个主题 Subtle Galaxy
+[Subtle Galaxy](https://github.com/GalaxySuze/gridea-theme-subtle-galaxy) 欢迎使用
 
-### 🎉 (2019-10-30)版本更新了~
+### 🎉 (2019-10-30)更新
 更新内容：
 
 - 新增友链页面
@@ -26,24 +26,13 @@
 
 <br>
 
-使用友链和图廊页面的方法[点击这里](https://zhangajian.com/post/geng-xin-liao-yi-bo-space-zhu-ti/)
+主题友链和图廊页面的使用方法[点击这里](https://kisstime.top/archives/40/)
 
-#### 图廊页面截图：
+### 主题演示
+![主题演示](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/pic_bed/demo.jpg)
+
+### 图廊页面截图：
 - 阴影卡片布局
 
-![阴影卡片布局](https://i.loli.net/2019/10/31/gZyMX1bvJUrRCYL.jpg)
-
-<br>
-
-- 平面卡片布局
-
-![平面卡片布局](https://i.loli.net/2019/10/31/vjVzDqfbTYgFyLK.jpg)
-
-#### 友链页面截图：
-![友链页面截图](https://i.loli.net/2019/10/31/pXqNQwY6DIdOG7u.jpg)
-
-### 示例
-
-[示例网站](https://zhangajian.com)
-![示例网站](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/theme_info/zaj_blog_01-min.png)
+![阴影卡片布局](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/pic_bed/kapian_02.jpg)
 
