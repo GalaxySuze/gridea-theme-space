@@ -29,10 +29,14 @@
 主题友链和图廊页面的使用方法[点击这里](https://kisstime.top/archives/40/)
 
 ### 主题演示
-![主题演示](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/pic_bed/demo.jpg)
+![主题演示](https://github.com/GalaxySuze/gridea-theme-space/raw/master/demo.png)
 
 ### 图廊页面截图：
 - 阴影卡片布局
 
-![阴影卡片布局](https://blog-img-hosting.oss-cn-shanghai.aliyuncs.com/blog/pic_bed/kapian_02.jpg)
+![阴影卡片布局](https://github.com/GalaxySuze/gridea-theme-space/raw/master/space-tulang-demo1.png)
+
+- 平面卡面布局
+
+![阴影卡片布局](https://github.com/GalaxySuze/gridea-theme-space/raw/master/space-tulang-demo-2.png)
 
